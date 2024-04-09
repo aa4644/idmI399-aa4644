@@ -10,6 +10,6 @@ Google Doc: https://docs.google.com/document/d/13GRyHG9ZbuMXRSkKDi--jq-QVZZLJTx-
 <h2>Wireframe</h2>
 <img src="images/markdown/wireframe.png" alt="wireframe of project" width="500"/>
 
-<h2>style chart</h2>
+<h2>Style Chart</h2>
 <img src="images/markdown/style-tile.png" alt="styling of project" width="500"/>
 
