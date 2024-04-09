@@ -13,3 +13,4 @@ Google Doc: https://docs.google.com/document/d/13GRyHG9ZbuMXRSkKDi--jq-QVZZLJTx-
 <h2>style chart</h2>
 <img src="images/markdown/style-tile.png" alt="styling of project" width="500"/>
 
+![ScreenShot](images/markdown/flowchart.png.jpg)
