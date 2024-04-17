@@ -32,13 +32,13 @@ body::before {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 38px;
     font-family: 'Shojumaru-Regular', sans-serif;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 5px;
     margin-bottom: 0;
     color: #E82E7C; 
     text-shadow: 
@@ -55,6 +55,7 @@ h1 {
 }
 
 .date-button {
+    cursor: pointer;
     font-family: 'ConcertOne-Regular', sans-serif;
     background-color: white; 
     color: #E82E7C; 
@@ -75,4 +76,16 @@ h1 {
     height: 480px; 
     background-color: rgba(255, 255, 255, 0.67);
     border-radius: 40px; 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+.open-card {
+    appearance: none;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    padding: 35px 15px 35px 15px;
 }
