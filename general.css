@@ -38,7 +38,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 5px;
+    padding-top: 10px;
     margin-bottom: 0;
     color: #E82E7C; 
     text-shadow: 
@@ -51,7 +51,7 @@ h1 {
 .button-container {
     text-align: center; 
     padding-top: 10px;
-    padding-bottom: 10px;;
+    padding-bottom: 5px;
 }
 
 .date-button {
@@ -65,7 +65,24 @@ h1 {
     font-size: 16px; 
 }
 
+.character-button {
+    cursor: pointer;
+    font-family: 'ConcertOne-Regular', sans-serif;
+    background-image: linear-gradient(to bottom, #FF62A4, #FFA16D); 
+    color: #ffffff; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 40px; 
+    font-size: 16px; 
+    transition: background-image 0.3s ease-in-out; 
+}
+
+.character-button:hover {
+    background-image: linear-gradient(to bottom, #FF3288, #FF8C4C);
+}
+
 .slime-box-container {
+    padding-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,6 +97,17 @@ h1 {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
 
+}
+
+.open-card img { 
+    align-self: center;
+    height: auto;
+    max-width: 152px;
+    transition: transform 0.2s ease-in-out; 
+}
+
+.open-card:hover img {
+    transform: scale(1.1); 
 }
 
 .open-card {
