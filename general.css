@@ -48,6 +48,23 @@ h1 {
         3px  3px 0 #FFFFFF;
 }
 
+h2 {
+    font-size: 25px;
+    font-family: 'ConcertOne-Regular', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    color: #E82E7C; 
+}
+
+p {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #E82E7C; 
+}
+
 .button-container {
     text-align: center; 
     padding-top: 10px;
@@ -117,5 +134,46 @@ h1 {
     cursor: pointer;
     padding: 23% 8% 23% 8%; /*try to fix this padding; something off about it specically for Dervish slime*/
     /*padding: 35px 15px 35px 15px; this kinda works but not exactly, also similar to the percentage*/
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 28%;
+    left: 11%;
+    display: flex;
+}
+
+.popup-content {
+    background: white;
+    padding: 40px;
+    border-radius: 40px;
+    display: flex; 
+    gap: 20px;
+    width: 1200px; 
+    height: 480px;
+}
+
+.popup-left {
+    flex: 1; 
+    padding: 30px;
+}
+
+.popup-left p {
+    margin-top: 15px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.popup-right {
+    flex: 1; 
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-right img {
+    max-width: 100%; 
+    max-height: 100%; 
 }
 
