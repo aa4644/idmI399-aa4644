@@ -147,10 +147,12 @@ p {
     background: white;
     padding: 40px;
     border-radius: 40px;
-    display: flex; 
+    display: none; 
     gap: 20px;
     width: 1200px; 
     height: 480px;
+    border: #E82E7C;
+    border-style: groove;
 }
 
 .popup-left {
