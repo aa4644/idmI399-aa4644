@@ -4,12 +4,12 @@
 
 @font-face {
     font-family: 'Shojumaru-Regular';
-    src: url('../idmI399-aa4644/fonts/Shojumaru-Regular.ttf');
+    src: url('fonts/Shojumaru-Regular.ttf');
 }
 
 @font-face {
     font-family: 'ConcertOne-Regular';
-    src: url('../idmI399-aa4644/fonts/ConcertOne-Regular.ttf');
+    src: url('fonts/ConcertOne-Regular.ttf');
 }
 
 body {
