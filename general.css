@@ -226,6 +226,10 @@ p {
     align-items: center;
 }
 
+.help-modal-container.show {
+    display: flex; 
+}
+
 .help-modal {
     width: 597px;
     height: 300px;
