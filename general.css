@@ -151,6 +151,10 @@ p {
     display: none;
 }
 
+.popup-overlay.show {
+    display: flex; 
+}
+
 .popup-content {
     background: white;
     padding: 40px;
