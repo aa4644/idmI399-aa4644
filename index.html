@@ -23,13 +23,20 @@
         </div>
     </header>
 
+<!--hw is getting the date button to be an actual date button
     <div class="button-container">
         <button class="date-button">mm/dd/yyyy</button>
+    </div>-->
+    
+    <div class="button-container">
+        <!--<button class="date-button" id="calendar-button">mm/dd/yyyy</button>-->
+        <input type="date" id="birthday" class="date-button" required>
     </div>
 
     <div class="button-container">
         <button class="character-button">Find My Slime!</button>
     </div>
+
 
     <div class="slime-box-container"> 
         <div class="slime-box">
@@ -96,7 +103,8 @@
         </div>
     </div>
 
-    <div class="popup-overlay" id="slime-PopUp">
+    <!--left align the text and fix the alignment of the pop-up-->
+    <class class="popup-overlay" id="slime-PopUp">
         <a href="#" id="close-popup">
             <img src="images/close_button.svg" alt="Close">
         </a>
@@ -114,14 +122,17 @@
                 <img src="images/slimes/puddle-slime.png" alt="Puddle Slime">
             </div>
         </div>
-    </div>
-    
+    </class>
+
+
     <div class="help-modal-container" id="help_modal_container">
         <div class="help-modal">
             <h1>How It Works!</h1>
-            <p>1. Enter your birthday within the [mm/dd/yyyy] text or enter using the calendar</p>
-            <p>2. Press the [Find My Slime!] button to see your slime</p>
-            <p>3. Discover other slimes by pressing on them!</p>
+            <ol>
+                <li>Enter your birthday within the [mm/dd/yyyy] text or enter using the calendar</li>
+                <li>Press the [Find My Slime!] button to see your slime</li>
+                <li>Discover other slimes by pressing on them!</li>
+            </ol>
             <button id="close">
                 <img src="images/close_button.svg" alt="Close">
             </button>
