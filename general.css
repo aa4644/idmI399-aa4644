@@ -124,6 +124,7 @@ p {
 
 }
 
+/*slime pop-up model*/
 .open-card img { 
     align-self: center;
     height: auto;
@@ -170,6 +171,7 @@ p {
 .popup-left {
     flex: 1; 
     padding: 30px;
+    text-align: left;
 }
 
 .popup-left p {
