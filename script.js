@@ -19,11 +19,26 @@ const quatumBtn = document.getElementById('quatum');
 const boomBtn = document.getElementById('boom');
 const puddleBtn = document.getElementById('puddle');
 
+const audio_player = document.getElementById('audio_player');
+let phosphorAudio_file = 'audios/phosphor-audio.mp3';
+const audio_element = new Audio(phosphorAudio_file);
+
+//figure out how to do multiple sounds 
+
+
+function play_audio(audio_element, src) {
+    if (audio_element && !audio_element.paused) {
+        audio_element.pause();
+        audio_element.currentTime = 0;
+    }
+    audio_element.src = src;
+    audio_element.play();
+}
 
 //this is so that when you click on the slimes, the slime will pop-up 
 //going to have to create this for all the slimes
 phosphorBtn.addEventListener("click", function() {
-    //alert ("phos called");
+    alert ("phos called");
     computeSlime(0);
 });
 glitchBtn.addEventListener("click", function() {
@@ -77,7 +92,9 @@ document.addEventListener("DOMContentLoaded", function() {
     submitButton.addEventListener('click', function() {
         const birthdayInput = document.getElementById('birthday').valueAsDate;
         const birthdayMonth = birthdayInput.getMonth() + 1;
-        const birthdayDay = birthdayInput.getDate();
+        const birthdayDay = birthdayInput.getDate() + 1;
+        //console.log (birthdayMonth);
+        //console.log (birthdayDay);
 
         let slimeName = '';
         let slimeDescription = '';
@@ -136,6 +153,7 @@ function computeSlime (slimeNum){
         slimeDescription = "Light up your life with the Phosphor Slime, the shining star of the zodiac skyline! With its gentle glow and steady perseverance, this slime embodies all the resilience and ambition of a Capricorn. Whether it's reaching for the stars or illuminating the darkest nights, this slime shines bright with determination and drive!";
         slimeDate = 'December 22 - January 19';
         slimeImageSrc = 'images/slimes/phosphor-slime.png';
+        play_audio(audio_player, phosphorAudio_file);
     } else if (slimeNum == 1){
         slimeName = 'Glitch Slime';
         slimeDescription = "Hold onto your hats and gear up for adventure with the Glitch Slime, the wild wanderer of the zodiac plains! With its knack for bending reality within the digital realm, this slime embodies the thrill-seeking excitement of a Sagittarius.";
