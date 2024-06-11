@@ -275,4 +275,4 @@ function computeSlime (slimeNum){
         popupContent.querySelector('p').textContent = slimeDescription;
         popupContent.querySelector('.popup-right img').src = slimeImageSrc;
         popupOverlay.style.display = 'block';
-};
+}
