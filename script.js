@@ -1,7 +1,7 @@
 //help button
-const open = document.getElementById('help_button');
+const openHelp = document.getElementById('help_button');
 const help_modal_container = document.getElementById('help_modal_container');
-const close = document.getElementById('close');
+const closeBtn = document.getElementById('close');
 
 const popupContent = document.querySelector('.popup-content');
 const popupOverlay = document.getElementById('slime-PopUp');
@@ -124,15 +124,15 @@ puddleBtn.addEventListener("click", function() {
     computeSlime(11);
 });
 
-open.addEventListener('click', () => {
+openHelp.addEventListener('click', () => {
     help_modal_container.classList.add('show');
 });
 
-close.addEventListener('click', () => {
+closeBtn.addEventListener('click', () => {
     help_modal_container.classList.remove('show');
 });
 
-
+//birthday function
 document.addEventListener("DOMContentLoaded", function() {
     const submitButton = document.querySelector('.character-button');
     
