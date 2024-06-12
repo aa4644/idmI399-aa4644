@@ -146,9 +146,8 @@ p {
 }
 
 .popup-overlay {
-    position: fixed;
-    top: 28%;
-    left: 11%;
+    position: absolute;
+    z-index: 1;
     display: none;
 }
 
