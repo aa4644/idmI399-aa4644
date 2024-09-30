@@ -141,8 +141,7 @@ p {
     border: none;
     background-color: inherit;
     cursor: pointer;
-    padding: 23% 8% 23% 8%; /*try to fix this padding; something off about it specically for Dervish slime*/
-    /*padding: 35px 15px 35px 15px; this kinda works but not exactly, also similar to the percentage*/
+    padding: 23% 8% 23% 8%; 
 }
 
 .popup-overlay {
